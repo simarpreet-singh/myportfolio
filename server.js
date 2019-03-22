@@ -67,4 +67,4 @@ app.get('/blog', (req, res) => {
 });
 
 
-app.listen(port, ()=> console.log('simcreate server started, port ' + port));
+app.listen(process.env.PORT || port, ()=> console.log('simcreate server started, port ' + port));
