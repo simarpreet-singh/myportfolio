@@ -1,0 +1,69 @@
+<% include ../partials/header %>
+
+<body>
+  <% include ../partials/sidenav %>
+  <div class="jumbotron jumbotron-fluid ccn">
+    <div class="container">
+      <h1 class="display-4">Community Cell Networks</h1>
+      <p>As a research assistant on a development project in the Philippines, I use econometrics and data analytics to explore the impact of cell networks on economic outcomes.</p>
+    </div>
+  </div>
+<section>
+  <div class="container">
+    <h3>As a research assistant (RA) to <a href="https://economics.ucdavis.edu/people/abrezaee" target="_blank">Dr. Arman Rezaee</a>, I work alongside a team of 5 RAs to explore and test hypotheses about the impact of Community Cell Networks on economic indicators in coastal Filipino villages.</h3>
+    <br>
+    <br>
+      <p class="longform">
+        Currently, I'm not able to publicly share the data, findings, or writing on the project as it is in progress.
+        <br>
+        <br>
+        However, some of the things I work on are:
+        <br>
+        <br>
+        <span class="emphasis">&mdash;</span> Modeling social networks where no cellular networks are present.
+        <br>
+        <br>
+        <span class="emphasis">&mdash;</span> Estimating the relationship between social networks and job markets with the Logit model.
+        <br>
+        <br>
+        <span class="emphasis">&mdash;</span> Analyzing income diversity and its interaction with household conditions, networks, and economic metrics.
+        <br>
+        <br>
+        Moving forward, the RA team is working on post-treatmemnt data analysis and testing our baseline hypotheses.
+        I'll be actively updating this page with new findings, work, and information as I'm able to share it!
+        If you'd like to read a bit about the project's context, <a href="https://kurti.sh/pubs/fil_ccn_ictd_2016.pdf" target="_blank">check this out</a>.
+      </p>
+      <p><small>Thank You to Professor Rezaee and the other PIs for the opportunity to assist with research.</small></p>
+    </div>
+</section>
+
+
+  <% include ../partials/contact %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 700, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+</body>

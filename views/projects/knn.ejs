@@ -1,0 +1,106 @@
+<% include ../partials/header %>
+
+<body>
+  <% include ../partials/sidenav %>
+  <div class="jumbotron jumbotron-fluid knn">
+    <div class="container">
+      <h1 class="display-4">Nearest Neighbor</h1>
+      <p>An implementation of the nearest neighbor algorithm in Python. Complete with the ability to train it on your own data in the terminal.</p>
+    </div>
+  </div>
+<section class="snow">
+  <div class="container">
+    <h3>Recently, I started teaching myself about machine learning. An exercise I'm doing as I progress in the ML world is to implement ML algorithms myself, mainly in Python.</h3>
+    <br>
+    <br>
+      <p class="longform">
+        Coming from an Economics background, specialized in data analytics / econometrics, I've dived into the inner-workings of:
+        <br>
+        <br>
+        <span class="emphasis">&mdash;</span> The multiple regression model
+        <br>
+        <br>
+        <span class="emphasis">&mdash;</span> Binary choice models (logit, probit)
+        <br>
+        <br>
+        <span class="emphasis">&mdash;</span> Some econometric models (diff-in-diff, instrumental variables, fixed-effect).
+        <br>
+        <br>
+        As I dive into ML, I want to have a similar intuition and understanding about how the algorithms actually work, when to use them, etc., rather than just knowing which commands to use.
+      </p>
+    </div>
+
+</section>
+<section>
+  <div class="container">
+    <h3>The Project</h3>
+
+    <div class="row">
+      <div class="col-xs-12 col-lg-6">
+        <div class="rand-img project-img">
+          <img src="/static/img/knn2.jpg" alt="notebook" class="image-fluid rounded">
+        </div>
+        <div class="rand-img project-img">
+          <img src="/static/img/knn3.png" alt="notebook" class="image-fluid rounded">
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-lg-6">
+        <div class="blurb-project">
+          <p class="blurb-content-project">
+            As a rewarding but simple introduction to ML algorithms, I implemented the  Nearest Neighbor algorithm (i.e. K is set to 1).
+            <br>
+            <br>
+            <span class="emphasis">Scope & Goals</span>
+            <br>
+            <br>
+            <span class="emphasis">1.</span> Implement the Nearest Neighbour algorithm in Python.
+            <br>
+            <br>
+            <span class="emphasis">2.</span> Create a terminal program that let's users train the model on their own (labeled & numerical) data-set.
+            <br>
+            <br>
+            <span class="emphasis">3.</span> Allow users to make predictions using the trained model.
+            <br>
+            <br>
+            This was a fun but challenging task. The result is a script that let's you train a classifier from the terminal on your own data-set and make predictions from that model. Check it out, I've provided the Iris Dataset in a CSV to test it out.
+            <br>
+            <br>
+            <a href="https://github.com/simarpreet-singh/nearest-neighbor-classifier" class="buttona" target="_blank"><button type="button" class="btn btn-outline-primary btn-block">Link (GitHub)</button></a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <% include ../partials/contact %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 700, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+</body>

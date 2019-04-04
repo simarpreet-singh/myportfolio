@@ -1,0 +1,135 @@
+<% include ../partials/header %>
+
+<body>
+  <% include ../partials/sidenav %>
+  <div class="jumbotron jumbotron-fluid digital-marketing-analytics">
+    <div class="container">
+      <h1 class="display-4">Digital Marketing Analytics</h1>
+      <p>At UC Davis's Summer Sessions Office I leverage Data Analytics, Digital Marketing, and Communciations to better serve UC Davis students.</p>
+    </div>
+  </div>
+<section>
+  <div class="container">
+    <h3>As the <span class="bold">Analytics and Communications Coordinator</span> at the UC Davis Summer Session's Office, I am tasked with:</h3>
+    <div class="container">
+      <p class="longform">
+
+        <br>
+        <span class="emphasis">&mdash; </span> Generating data insight reports from multiple data streams and communicating insights at quarterly analytics check-ins.
+        <br>
+        <br>
+        <span class="emphasis">&mdash; </span> Cleaning and wrangling large datasets for presentations by the department's director.
+        <br>
+        <br>
+        <span class="emphasis">&mdash; </span> Performing ad-hoc analyses on marketing, administrative, and web-traffic data to extract actionable insights and assess KPIs.
+        <br>
+        <br>
+        <span class="emphasis">&mdash; </span> Developing tools, materials, and documents to communciate insights and recommendations to key technical and non-technical stakeholders.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="snow">
+  <div class="container">
+    <h3>Deliverables</h3>
+
+    <div class="row">
+      <div class="col-xs-12 col-lg-6">
+        <div class="rand-img project-img">
+          <img src="https://images.unsplash.com/photo-1524048824421-51d2958dc634?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="sticky notes" class="image-fluid rounded">
+        </div>
+      </div>
+      <div class="col-xs-12 col-lg-6">
+        <div class="blurb-project">
+          <p class="blurb-content-project">
+            As a means to increase access and communication around analytics, metrics and performance, I took the initiative to build-out a quarterly data insight report. The report's main goal is to communicate the impact and performance of the team's marketing efforts to the various team members from designers, to policy analysts and program leaders, and to the director.
+            <br>
+            <br>
+            The data that drives these reports is gathered from web-traffic data, marketing campaign data from Facebook / Instagram, and partnerships for other digital ads such as Spotify Audio ads, Newspaper tiles, and search engine ads.
+            <br>
+            <br>
+            Using exploratory results and outcomes from statiatical analyses on these data sets, I interpret and compile the information into stratefgic recommendations such as future advertising strategies, mechanisms to better meassure campaign performance, and web ux changes to optimize our conversion funnel.
+            <br>
+            <br>
+            <span class="emphasis">Results</span>
+            <br>
+            <br>
+            As a result of the recommendations I synthesized from these reports, <span class="bold">lead conversion increased by 30%</span> through the 2017-2018 school year.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h3>Tools</h3>
+
+    <div class="row">
+      <div class="col-xs-12 col-lg-6">
+        <div class="blurb-project">
+          <p class="blurb-content-project">
+            I use  a combination of different programming languages, software and techniques to clean, manipulate and interpret different datasets.
+            <br>
+            <br>
+            <span class="emphasis">Specifically,</span>
+            <br>
+            <br>
+            I use <span class="bold">Python</span> to pull data from Google Analytics reports and run it through pipeline that cleans it and computes target KPIs.
+            <br>
+            <br>
+            For daily data wrangling or simple tasks like merging multiple data sets (often things like demographic information or course lists with enrollment variables), I like to use <span class="bold">R</span> (creature of habbit?).
+            <br>
+            <br>
+            When there are projects that require some cleaning, some computations but the data is going to be worked on by others (i.e. the director for presentations,the policy analyst to implement custom formulas, etc.) I like to keep things simple and keep versioned <span class="bold"> Excel</span> workbooks.
+            <br>
+            <br>
+            Lastly, I'm often implementing the recommendations and updates from insight reports and for marketing campaigns (like developing landing pages) to our website. Here, I use <span class="bold">Google Analytics</span> to setup custom reports to have precise measures on UI/UX changes and on user-interaction during marketing campaigns. 
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-lg-6">
+        <div class="rand-img project-img">
+          <img src="/static/img/ss-tools.png" alt="sticky notes" class="image-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+  <% include ../partials/contact %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 700, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+</body>

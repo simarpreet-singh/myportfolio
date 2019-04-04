@@ -1,0 +1,52 @@
+<% include ../partials/header %>
+
+<body>
+  <% include ../partials/sidenav %>
+  <div class="jumbotron jumbotron-fluid music">
+    <div class="container">
+      <h1 class="display-4">Sun and Her Flowers Tour, Rupi Kaur</h1>
+      <p>Musical Director, The Sun and Her Flowers Tour by author and artist Rupi Kaur.</p>
+      <p><small>photo by <a href="https://www.instagram.com/nabilshash/" target="_blank">Nabil Shash</a></small></p>
+    </div>
+  </div>
+<section>
+  <div class="container">
+    <h3><a href="https://rupikaur.com/about" target="_blank">Rupi Kaur</a> is a #1 NY Times Best Selling Author. For her second body of work, The Sun and Her Flowers, there was an international tour with a broadway premier.</h3>
+    <br>
+    <br>
+      <p class="longform">
+        I was brought on to the team as the Musical Director, leading the composition of 5 scores to Rupi's multi-media performances and working on sound design for the live set.
+      </p>
+    </div>
+</section>
+
+
+  <% include ../partials/contact %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 700, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+</body>

@@ -72,6 +72,14 @@
   .project-des {
     background-color: white;
   }
+
+  .project-des-text {
+    border-left-style: solid;
+    border-left-width: medium;
+    border-left-color: slateblue;
+    padding-left: 5%;
+  }
+
   #about {
     min-height: 100vh;
   }
@@ -96,12 +104,128 @@
     color: black;
     font-size: 20px;
   }
+  .mnormal {
+    margin-top: 0%;
+    font-weight: 300;
+    color: #3d4050;
+    font-size: 13px;
+  }
   .col-skill > p {
     color: #3d4050;
     line-height: 28px;
     text-align: left;
     font-size: 14px;
   }
+  /* digital-marketing-analytics project */
+  .digital-marketing-analytics {
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.knn {
+color: white;
+background-image: url("/static/img/knn-no-line.png");
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+height: 50vh;
+}
+
+.ccn {
+color: white;
+background-image: url("https://images.unsplash.com/photo-1441639087627-2b18e64870a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 50vh;
+}
+
+.music {
+color: white;
+background-image: url("/static/img/music-dark.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 50vh;
+}
+
+.style-none {
+  text-decoration: none;
+  /* -webkit-text-decoration-color: ; */
+  text-decoration-color: default;
+  text-decoration-style: none;
+  color: black;
+}
+
+.rand-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rand-img>img {
+  width: 70%;
+  margin: 5%;
+}
+.blurb-project {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blurb-content-project {
+  width: 70%;
+  margin: 5%;
+}
+
+
+.slick-black-bg {
+  background-color: #373532
+}
+
+.slick-black-text {
+  color: #373532
+}
+
+.snow-text {
+  color: snow;
+}
+
+.btn-outline-primary {
+  color: slateblue !important;
+  border-color: slateblue !important;
+
+}
+.btn-outline-primary:hover {
+  color: white !important;
+  background-color: slateblue !important;
+
+}
+.buttona {
+  text-decoration: none !important;
+}
+
+.links-icon {
+  margin: 5%;
+  text-decoration: none;
+}
+
+.horizontal-project {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.rupikaur {
+  width:90%;
+}
 
 }
 
@@ -113,7 +237,7 @@
   .longform {
     font-size: 16px
   }
-  .project {
+  /* .project {
     height: 33%;
   }
   .projectr {
@@ -122,18 +246,47 @@
   .projectrr {
     display: flex;
     flex-direction: column;
-  }
+  } */
   .project-img {
     flex: 2;
+    padding: 5%;
   }
   .project-des {
     flex: 1;
   }
 
+  /* digital-marketing-analytics project */
+  .digital-marketing-analytics {
+  height: 30vh;
+}
+
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+  /* digital-marketing-analytics project */
+  .digital-marketing-analytics {
+  height: 40vh;
+  }
+
+  .home_style {
+    border-style: solid;
+    border-radius: 0;
+    border-width: thin;
+    border-color: #695ACD;
+    padding: 10%;
+    text-decoration: none;
+    -webkit-text-decoration-color: black;
+    text-decoration-color: black;
+    text-decoration-style: none;
+    color: black;
+  }
+
+  .rupikaur {
+    width:40%;
+  }
+
+}
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { ... }
